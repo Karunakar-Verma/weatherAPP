@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="maincontainer" id="maincontainer">
+
+        <div class="container">
+
+            <!-- Search Form -->
+            <form id="searchBarContainer">
+                <input type="text" id="cityInput" placeholder="Enter City Name..">
+                <button type="submit" id="searchBtn"><img src="search.png" alt="search-logo"></button>
+            </form>
+            
+            <!-- Main Weather Data -->
+            <div class="mainArea" id="mainArea">
+            </div>
+
+            <div class="contentArea" id="contentArea">
+
+                <!-- Sunrise Time -->
+                <div id="temp_max">
+                    <img id="sunriseImg" src="icons8-sunrise-48-removebg-preview.png" alt="Sunrise Icon">
+                    <h1 id="sunriseTime">6:00 AM</h1> 
+                </div>
+
+                <!-- Temperature and Main Weather Icon -->
+                <div id="output">
+                    <h1 id="temperature">28&deg;</h1>
+                    <img id="weatherImg" src="sun-removebg-preview.png" alt="Weather Icon">
+                </div>
+
+                <!-- Sunset Time -->
+                <div class="temp_min" id="temp_min">
+                    <img id="sunsetImg" src="icons8-sunset-48-removebg-preview.png" alt="Sunset Icon">
+                    <h1 id="sunsetTime">7:00 PM</h1>
+                </div>
+
+            </div>
+
+            <!-- Additional Weather Info -->
+            <div class="lastRow" id="lastRow">
+
+                <!-- Wind Speed -->
+                <div id="wind_speed">
+                    <img src="wind-removebg-preview.png" alt="Wind Icon">
+                    <h1 id="windSpeed">12.2</h1>
+                </div>
+
+                <!-- Humidity -->
+                <div id="humidity">
+                    <img src="icons8-humidity-50-removebg-preview.png" alt="Humidity Icon">
+                    <h1 id="humidityValue">13%</h1>
+                </div>
+
+                <!-- Feels Like Temperature -->
+                <div id="feelslike">
+                    <img src="sun-removebg-preview.png" alt="Feels Like Icon">
+                    <h1 id="feelsLikeTemp">122</h1>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": 78.0437,
+        "lat": 30.3256
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 19.82,
+        "feels_like": 19.61,
+        "temp_min": 19.82,
+        "temp_max": 19.82,
+        "pressure": 1013,
+        "humidity": 67,
+        "sea_level": 1013,
+        "grnd_level": 918
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.7,
+        "deg": 50,
+        "gust": 2.39
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1729355713,
+    "sys": {
+        "country": "IN",
+        "sunrise": 1729299149,
+        "sunset": 1729339963
+    },
+    "timezone": 19800,
+    "id": 1273313,
+    "name": "Dehradun",
+    "cod": 200
+}

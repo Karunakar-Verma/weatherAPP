@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #3B7E88;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    box-shadow: 0px 0px 20px;
+    height: 95%;
+    overflow: hidden;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 50px;
+    margin: 50px 90px;
+}
+
+form input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 29px;
+    border: 0px;
+    box-shadow: 0px 0px 10px;
+}
+
+form button {
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+}
+
+form img {
+    background-color: white;
+    padding: 7px;
+    margin: 0px 8px;
+    height: 35px;
+    width: 35px;
+    border: 0px;
+    border-radius: 29px;
+    box-shadow: 0px 0px 10px;
+}
+
+#output {
+    display: flex;
+    justify-content: center;
+    font-size: 89px;
+    margin: 10px;
+}
+
+.contentArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, white 50%, #3B7E88);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+}
+
+.contentArea #sunriseImg,
+.contentArea #sunsetImg {
+    height: 100px;
+    width: 100px;
+}
+
+#output h1 {
+    background: linear-gradient(to bottom, white 50%, #3B7E88);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+}
+
+#output img {
+    height: 50px;
+    width: 50px;
+}
+
+.lastRow {
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+    background: linear-gradient(to bottom, white 50%, #3B7E88);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+}
+
+#wind_speed, #humidity, #feelslike, #temp_max, #temp_min {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    width: 250px;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.lastRow img {
+    height: 110px;
+    width: 110px;
+}
+
+#pressure, #visibility { 
+    display: flex;
+    justify-content: center;
+    width: auto;
+    width: 250px;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+@media (max-width: 798px) {
+    #output {
+        font-size: 40px;
+    }
+    .contentArea {
+        width: 100%;
+        margin-right: 20px;
+        overflow: hidden;
+    }
+    .contentArea #sunriseImg,
+    .contentArea #sunsetImg {
+        height: 60px;
+        width: 60px;
+    }
+    .maincontainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    #wind_speed, #humidity, #feelslike, #temp_max, #temp_min, #pressure, #visibility {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+    .lastRow img {
+        height: 70px;
+        width: 70px;
+    }
+    form input, form img {
+        box-shadow: 0px 0px 5px;
+    }
+    form {
+        margin: 20px 40px;
+    }
+}
+
+@media (max-width: 580px) {
+    #output {
+        font-size: 30px;
+    }
+    .contentArea #sunriseImg,
+    .contentArea #sunsetImg {
+        height: 50px;
+        width: 50px;
+    }
+    .container {
+        width: 95%;
+    }
+    .lastRow img {
+        height: 60px;
+        width: 60px;
+    }
+    form {
+        margin: 20px 30px;
+    }
+    #wind_speed, #humidity, #feelslike, #temp_max, #temp_min, #pressure, #visibility {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 563px) {
+    #output {
+        font-size: 25px;
+    }
+    .contentArea #sunriseImg,
+    .contentArea #sunsetImg {
+        height: 45px;
+        width: 45px;
+    }
+    .container {
+        width: 95%;
+    }
+    .lastRow img {
+        height: 50px;
+        width: 50px;
+    }
+    form {
+        margin: 15px 25px;
+    }
+    #wind_speed, #humidity, #feelslike, #temp_max, #temp_min, #pressure, #visibility {
+        margin: 8px;
+    }
+}
+
+@media (max-width: 540px) {
+    #output {
+        font-size: 22px;
+    }
+    .contentArea #sunriseImg,
+    .contentArea #sunsetImg {
+        height: 40px;
+        width: 40px;
+    }
+    .container {
+        width: 100%;
+    }
+    .lastRow img {
+        height: 45px;
+        width: 45px;
+    }
+    form {
+        margin: 10px 20px;
+    }
+    #wind_speed, #humidity, #feelslike, #temp_max, #temp_min, #pressure, #visibility {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 403px) {
+    #output {
+        font-size: 18px;
+    }
+    .contentArea #sunriseImg,
+    .contentArea #sunsetImg {
+        height: 35px;
+        width: 35px;
+    }
+    .container {
+        width: 100%;
+    }
+    .lastRow img {
+        height: 40px;
+        width: 40px;
+    }
+    form {
+        margin: 5px 15px;
+    }
+    #wind_speed, #humidity, #feelslike, #temp_max, #temp_min, #pressure, #visibility {
+        margin: 3px;
+    }
+}
